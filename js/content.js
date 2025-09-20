@@ -11,7 +11,9 @@ export async function fetchList() {
         const list = await listResult.json();
         return await Promise.all(
             list.map(async (path, rank) => {
-                const levelResult = await fetch(`${dir}/${path}.json`);
+                // URL encode the path to handle spaces in filenames
+                const encodedPath = encodeURIComponent(path);
+                const levelResult = await fetch(`${dir}/${encodedPath}.json`);
                 try {
                     const level = await levelResult.json();
                     return [
