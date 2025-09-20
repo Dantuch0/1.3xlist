@@ -121,7 +121,7 @@ export default {
                         Do not use easy modes, only a record of the unmodified level qualifies
                     </p>
                     <p>
-                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
+                        Levels must be played at 1.3X speed, and you must show your speedhack one the run is complete.
                     </p>
                 </div>
             </div>
